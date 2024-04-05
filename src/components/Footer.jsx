@@ -5,7 +5,7 @@ function Footer() {
       <p>Made by Pritam</p>
       <div className="flex gap-2">
         <p>Copyright</p>
-        <img src="/assets/copyright.png" className="h-5 w-5" />
+        <img src="/images/copyright.png" className="h-5 w-5" />
         <p>{currentDate}</p>
       </div>
     </div>
