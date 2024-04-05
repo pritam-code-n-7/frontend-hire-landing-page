@@ -5,8 +5,8 @@ const LazyImage = lazy(() => import("./Image"));
 
 function Header() {
   return (
-    <div className="flex flex-col sm:flex-row p-4 bg-white justify-between items-center rounded-md">
-      <div className="flex items-center mb-4 sm:mb-0">
+    <div className="flex flex-col sm:flex-row p-2 sm:p-4 bg-white justify-between justify-items-center rounded-md">
+      <div className="flex items-center mb-2 sm:mb-0">
         <div>
           <Suspense fallback={<div>Loading...</div>}>
             <LazyImage /> {/* Lazy-loaded Image component */}
@@ -16,7 +16,7 @@ function Header() {
       </div>
 
       <div className="flex flex-col sm:flex-row sm:gap-6">
-        <div className="flex flex-col sm:flex-row gap-4 items-center mb-4 sm:mb-0">
+        <div className="hidden sm:flex flex-col sm:flex-row gap-4 items-center mb-2 sm:mb-0">
           <a
             href="#a"
             className="text-black hover:text-gray-500 text-xs sm:text-sm"
@@ -31,11 +31,11 @@ function Header() {
             PRICING
           </a>
         </div>
-        <div className="flex gap-4 items-center">
-          <button className="py-1 px-2 rounded-full border border-black text-xs sm:text-sm hover:bg-black hover:text-white transition-colors duration-300 font-semibold">
+        <div className="flex gap-2 justify-items-center">
+          <button className="py-1 px-2 sm:py-2 sm:px-4 rounded-full border border-black text-xs sm:text-sm hover:bg-black hover:text-white transition-colors duration-300 font-semibold">
             ENROLL NOW
           </button>
-          <button className="py-2 px-4 rounded-full bg-yellow-400 text-white text-xs sm:text-sm hover:bg-yellow-500 transition-colors duration-300 font-semibold">
+          <button className="py-2 px-4 sm:py-2 sm:px-4 rounded-full bg-yellow-400 text-white text-xs sm:text-sm hover:bg-yellow-500 transition-colors duration-300 font-semibold">
             VIEW COURSE PACKAGE
           </button>
         </div>

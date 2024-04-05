@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
-import React from 'react';
-import { Typography, List, ListItem, TextField, Button, styled, Card, CardContent, Box, Grid } from '@mui/material';
+import { Typography, List, ListItem, TextField, Button, styled, Card, CardContent, Grid } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const StyledDiv = styled('div')({
@@ -9,6 +7,9 @@ const StyledDiv = styled('div')({
   alignItems: 'center',
   '& > *': {
     margin: '8px', // Adjust margin as needed
+  },
+  '@media (max-width: 600px)': {
+    display: 'none', // Hide the component for screens with a width less than or equal to 600px (adjust as needed)
   },
 });
 
