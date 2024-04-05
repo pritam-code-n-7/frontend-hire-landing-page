@@ -1,13 +1,14 @@
 import { lazy, Suspense } from "react";
 
+const LazyImage = lazy(() => import("./Image"));
+
 function Header() {
-  const Image = lazy(() => import("./Image"));
   return (
     <div className="flex flex-col sm:flex-row p-4 bg-white justify-between items-center rounded-md">
       <div className="flex items-center mb-4 sm:mb-0">
         <div>
           <Suspense fallback={<div>Loading...</div>}>
-            <Image />
+            <LazyImage /> {/* Lazy-loaded Image component */}
           </Suspense>
         </div>
         <p className="font-semibold text-sm sm:text-base">Frontend Hire</p>
