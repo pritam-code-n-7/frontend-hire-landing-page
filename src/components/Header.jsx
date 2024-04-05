@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { Link } from "react-router-dom";
 
 const LazyImage = lazy(() => import("./Image"));
 
@@ -22,12 +23,7 @@ function Header() {
           >
             HOW IT WORKS
           </a>
-          <a
-            href="#b"
-            className="text-black hover:text-gray-500 text-xs sm:text-sm"
-          >
-            TESTIMONIALS
-          </a>
+          <Link to="/about">TESTIMONIALS</Link>
           <a
             href="#c"
             className="text-black hover:text-gray-500 text-xs sm:text-sm"
