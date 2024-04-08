@@ -1,7 +1,7 @@
 
-import { Typography, List, ListItem, TextField, Button, styled, Card, CardContent, Grid } from '@mui/material';
+import { Typography, List, ListItem, TextField, Button, styled, Card, CardContent } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import DOMPurify from 'dompurify'; // Import dompurify
+import DOMPurify from 'dompurify';
 
 const StyledDiv = styled('div')({
   display: 'flex',
@@ -45,23 +45,17 @@ const HeroSection = () => {
               <ListItem key={index}>
                 <ListWithTick>
                   <CheckCircleIcon />
-                  {/* Sanitize user-generated content */}
                   {sanitizeHTML(text)}
                 </ListWithTick>
               </ListItem>
             ))}
           </List>
-          <Grid container spacing={2} alignItems="center">
-            <Grid item xs={12} sm={6}>
-              <TextField fullWidth type="text" placeholder="First Name" variant="outlined" inputProps={{ maxLength: 10 }} />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <TextField fullWidth type="email" placeholder="Email" variant="outlined" required />
-            </Grid>
-            <Grid item xs={12}>
-              <Button fullWidth variant="contained" sx={{ bgcolor: 'blueviolet' }}>SIGN UP</Button>
-            </Grid>
-          </Grid>
+          {/* Adjusted input fields */}
+          <TextField fullWidth type="email" placeholder="Email" variant="outlined" required />
+          {/* Adjusted input fields */}
+          <TextField fullWidth type="password" placeholder="Password" variant="outlined" inputProps={{ maxLength: 10 }} />
+          {/* Adjusted button size */}
+          <Button fullWidth variant="contained" sx={{ bgcolor: 'blueviolet', height: '50px', marginTop: '8px' }}>SIGN UP</Button>
         </StyledDiv>
       </CardContent>
     </Card>
