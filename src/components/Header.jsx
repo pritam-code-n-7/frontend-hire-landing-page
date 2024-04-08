@@ -12,7 +12,7 @@ function Header() {
             <LazyImage /> {/* Lazy-loaded Image component */}
           </Suspense>
         </div>
-        <p className="font-semibold text-sm sm:text-base">Frontend Hire</p>
+        <p className="font-semibold text-sm sm:text-base">Strong Minded</p>
       </div>
 
       <div className="flex flex-col sm:flex-row sm:gap-6">

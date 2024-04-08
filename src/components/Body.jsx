@@ -4,12 +4,12 @@ import HeroSection from "./HeroSection";
 
 function Body() {
   return (
-    <div className="bg-blue-950 flex flex-col">
+    <div className="bg-blue-950 flex flex-col ">
       <main className="flex p-6" role="main">
         <Features />
         <HeroSection />
       </main>
-      <div className="">
+      <div className="mb-64">
         <Footer />
       </div>
     </div>
