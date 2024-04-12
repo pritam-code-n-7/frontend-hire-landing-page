@@ -5,11 +5,11 @@ import HeroSection from "./HeroSection";
 function Body() {
   return (
     <div className="bg-blue-950 flex flex-col ">
-      <main className="flex p-6" role="main">
+      <main className="flex p-10" role="main">
         <Features />
         <HeroSection />
       </main>
-      <div className="mb-64">
+      <div >
         <Footer />
       </div>
     </div>
