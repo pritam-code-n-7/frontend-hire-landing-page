@@ -9,7 +9,7 @@ function Body() {
         <Features />
         <HeroSection />
       </main>
-      <div >
+      <div>
         <Footer />
       </div>
     </div>

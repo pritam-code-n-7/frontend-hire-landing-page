@@ -1,26 +1,34 @@
+import {
+  Typography,
+  List,
+  ListItem,
+  TextField,
+  Button,
+  styled,
+  Card,
+  CardContent,
+} from "@mui/material";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import DOMPurify from "dompurify";
 
-import { Typography, List, ListItem, TextField, Button, styled, Card, CardContent } from '@mui/material';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import DOMPurify from 'dompurify';
-
-const StyledDiv = styled('div')({
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  '& > *': {
-    margin: '8px', // Adjust margin as needed
+const StyledDiv = styled("div")({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  "& > *": {
+    margin: "8px", // Adjust margin as needed
   },
-  '@media (max-width: 600px)': {
-    display: 'none', // Hide the component for screens with a width less than or equal to 600px (adjust as needed)
+  "@media (max-width: 600px)": {
+    display: "none", // Hide the component for screens with a width less than or equal to 600px (adjust as needed)
   },
 });
 
-const ListWithTick = styled('div')({
-  display: 'flex',
-  alignItems: 'center',
-  '& svg': {
-    marginRight: '8px',
-    color: 'yellow',
+const ListWithTick = styled("div")({
+  display: "flex",
+  alignItems: "center",
+  "& svg": {
+    marginRight: "8px",
+    color: "yellow",
   },
 });
 
@@ -30,17 +38,19 @@ const sanitizeHTML = (html) => {
 
 const HeroSection = () => {
   return (
-    <Card sx={{ maxWidth: 500, margin: 'auto', height: 500 }}>
+    <Card sx={{ maxWidth: 500, margin: "auto", height: 500 }}>
       <CardContent>
         <StyledDiv>
-          <Typography variant="body1">View Course Package to Access:</Typography>
+          <Typography variant="body1">
+            View Course Package to Access:
+          </Typography>
           <List>
             {[
-              'Our Syllabus',
-              'Frontend Skills',
-              'How Our Work Exp Work',
-              'Why 94.3% of our students get interviews or job offers within 3 weeks',
-              'Get free job help',
+              "Our Syllabus",
+              "Frontend Skills",
+              "How Our Work Exp Work",
+              "Why 94.3% of our students get interviews or job offers within 3 weeks",
+              "Get free job help",
             ].map((text, index) => (
               <ListItem key={index}>
                 <ListWithTick>
@@ -51,11 +61,29 @@ const HeroSection = () => {
             ))}
           </List>
           {/* Adjusted input fields */}
-          <TextField fullWidth type="email" placeholder="Email" variant="outlined" required />
+          <TextField
+            fullWidth
+            type="email"
+            placeholder="Email"
+            variant="outlined"
+            required
+          />
           {/* Adjusted input fields */}
-          <TextField fullWidth type="password" placeholder="Password" variant="outlined" inputProps={{ maxLength: 10 }} />
+          <TextField
+            fullWidth
+            type="password"
+            placeholder="Password"
+            variant="outlined"
+            inputProps={{ maxLength: 10 }}
+          />
           {/* Adjusted button size */}
-          <Button fullWidth variant="contained" sx={{ bgcolor: 'blueviolet', height: '50px', marginTop: '8px' }}>SIGN UP</Button>
+          <Button
+            fullWidth
+            variant="contained"
+            sx={{ bgcolor: "blueviolet", height: "50px", marginTop: "8px" }}
+          >
+            SIGN UP
+          </Button>
         </StyledDiv>
       </CardContent>
     </Card>
