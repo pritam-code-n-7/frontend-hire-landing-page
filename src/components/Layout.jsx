@@ -1,13 +1,15 @@
 /* eslint-disable react/prop-types */
 // Layout.js
 
+import Footer from "./Footer";
 import Header from "./Header";
 
 function Layout({ children }) {
   return (
-    <div>
+    <div className="bg-blue-950">
       <Header />
       {children}
+      <Footer />
     </div>
   );
 }

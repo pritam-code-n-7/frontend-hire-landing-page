@@ -15,7 +15,7 @@ function Footer() {
           <h1 className="font-serif font-bold text-lg sm:text-xl mb-2">Strong Minded</h1>
           <p>This is for strong-minded people.</p>
         </div>
-        <div className="flex flex-wrap justify-center sm:justify-start mb-4 sm:mb-0">
+        <div className="flex flex-wrap justify-center sm:justify-start mb-4 sm:mb-0"> 
           <Categories />
           <Categories />
           <Categories />

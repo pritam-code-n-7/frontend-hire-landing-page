@@ -1,32 +1,25 @@
+import { Link } from "react-router-dom";
 import Features from "./Features";
-import Footer from "./Footer";
 import HeroSection from "./HeroSection";
-import Chatbot from "react-chatbot-kit";
-import "react-chatbot-kit/build/main.css";
-import config from "/src/chatbot/config.js";
-import MessageParser from "/src/chatbot/MessageParser";
-import ActionProvider from "/src/chatbot/ActionProvide";
+import { TbMessageChatbot } from "react-icons/tb";
 
 function Body() {
   return (
-    <div className="bg-blue-950 flex flex-col">
+    <div className="flex flex-col">
       <main className="flex p-10" role="main">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 justify-items-center">
           <Features />
-          <div className="min-w-40 min-h-40"> {/* Adjust width and height as needed */}
-            <Chatbot
-              config={config}
-              messageParser={MessageParser}
-              actionProvider={ActionProvider}
-            />
-          </div>
+          <Link to="/chatbot">
+            <div className="mt-12 md:mt-24 lg:mt-48">
+              <TbMessageChatbot size={50} color="cyan" />
+            </div>
+          </Link>
         </div>
-
-        <HeroSection />
+        {/* Hide HeroSection in mobile view */}
+        <div className="hidden md:flex">
+          <HeroSection />
+        </div>
       </main>
-      <div>
-        <Footer />
-      </div>
     </div>
   );
 }
