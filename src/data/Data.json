@@ -1,0 +1,34 @@
+[
+  {
+    "categories": "frontend developer",
+    "experience": {
+      "levelone": "beginner",
+      "leveltwo": "intermidiate",
+      "levelthree": "expert"
+    }
+  },
+  {
+    "categories": "backend developer",
+    "experience": {
+      "levelone": "beginner",
+      "leveltwo": "intermidiate",
+      "levelthree": "expert"
+    }
+  },
+  {
+    "categories": "full-stack developer",
+    "experience": {
+      "levelone": "beginner",
+      "leveltwo": "intermidiate",
+      "levelthree": "expert"
+    }
+  },
+  {
+    "categories": "devOps engineer",
+    "experience": {
+      "levelone": "beginner",
+      "leveltwo": "intermidiate",
+      "levelthree": "expert"
+    }
+  }
+]
