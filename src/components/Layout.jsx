@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-// Layout.js
 
 import Footer from "./Footer";
 import Header from "./Header";

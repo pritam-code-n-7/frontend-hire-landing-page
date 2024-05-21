@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-function Button({ name }) {
+function BlackButton({ name, onClick}) {
   return (
     <div className="flex items-center bg-black text-white text-xs font-semibold px-4 py-2 rounded-md">
-      <button>{name}</button>
+      <button onClick={onClick}>{name}</button>
     </div>
   );
 }
 
-export default Button;
+export default BlackButton;

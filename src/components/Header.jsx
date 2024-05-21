@@ -1,11 +1,16 @@
 import { lazy, Suspense } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import BlackButton from "../reusable/BlackButton";
 
-const LazyImage = lazy(() => import("./Image"));
+const LazyImage = lazy(() => import("../reusable/Image"));
 
 function Header() {
+  const route = useNavigate();
+  function handleBack() {
+    route("/");
+  }
   return (
-    <div className="flex flex-col sm:flex-row p-2 sm:p-4 bg-white justify-between justify-items-center rounded-md">
+    <div className="flex flex-col sm:flex-row p-2 sm:p-4 bg-white justify-between justify-items-center rounded">
       <div className="flex items-center mb-2 sm:mb-0">
         <div>
           <Suspense fallback={<div>Loading...</div>}>
@@ -23,7 +28,7 @@ function Header() {
           >
             HOW IT WORKS
           </a>
-          <Link to="/about">TESTIMONIALS</Link>
+          <Link to="/about">ABOUT US</Link>
           <a
             href="#c"
             className="text-black hover:text-gray-500 text-xs sm:text-sm"
@@ -39,6 +44,10 @@ function Header() {
             VIEW COURSE PACKAGE
           </button>
         </div>
+        <div className="flex justify-end ">
+        <BlackButton name="back" onClick={handleBack} />
+        </div>
+        
       </div>
     </div>
   );

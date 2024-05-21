@@ -1,4 +1,4 @@
-import Categories from "./Categories";
+import Categories from "../reusable/Categories";
 import { CiLinkedin } from "react-icons/ci";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
@@ -36,7 +36,7 @@ function Footer() {
       </div>
       <hr className="border-t border-slate-400 w-full my-4" /> {/* Divider */}
       <div className="container mx-auto  text-center sm:text-left">
-        <div className="flex flex-col items-center sm:items-start justify-center mb-2 text-center sm:text-left gap-2 ">
+        <div className="flex flex-col items-center  justify-center mb-2 text-center  gap-2 ">
           <p>© {currentDate} All rights reserved</p>
 
           <p>Developed by Pritam Nandy</p>

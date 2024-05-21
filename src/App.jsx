@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Body from "./components/Body";
-import About from "./components/About";
-import { ChatBot } from "./components/ChatBot";
+import About from "./pages/About";
+import { ChatBot } from "./reusable/ChatBot";
 
 function App() {
   return (
