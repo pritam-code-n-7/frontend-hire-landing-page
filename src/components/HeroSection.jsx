@@ -80,7 +80,7 @@ const HeroSection = () => {
           <Button
             fullWidth
             variant="contained"
-            sx={{ bgcolor: "blueviolet", height: "50px", marginTop: "10px" }}
+            sx={{ bgcolor: "blueviolet", height: "50px", marginTop: "8px" }}
           >
             SIGN UP
           </Button>

@@ -1,0 +1,6 @@
+[
+  { "name": "Self-paced", "type": "button"},
+  { "name": "On-Demand", "type": "button" },
+  { "name": "Real Work Experience", "type": "button" },
+  { "name": "1-on-1 Expert Training", "type": "button" }
+]

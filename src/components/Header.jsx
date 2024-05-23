@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import BlackButton from "../reusable/BlackButton";
 import YellowButton from "../reusable/YellowButton";
 import WhiteButton from "../reusable/WhiteButton";
-
+import { FaReact } from "react-icons/fa";
 const LazyImage = lazy(() => import("../reusable/Image"));
 
 function Header() {
@@ -16,7 +16,13 @@ function Header() {
     <div className="flex flex-col sm:flex-row p-2 sm:p-4 bg-white justify-between rounded">
       <div className="flex items-center mb-2 sm:mb-0">
         <div>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense
+            fallback={
+              <div>
+                <FaReact size={"5px"} />
+              </div>
+            }
+          >
             <LazyImage /> {/* Lazy-loaded Image component */}
           </Suspense>
         </div>
