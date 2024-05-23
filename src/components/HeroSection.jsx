@@ -38,10 +38,10 @@ const sanitizeHTML = (html) => {
 
 const HeroSection = () => {
   return (
-    <Card sx={{ maxWidth: 500, margin: "auto", height: 500 }}>
+    <Card sx={{ maxWidth: 500, margin: "auto", height: 520 }}>
       <CardContent>
         <StyledDiv>
-          <Typography variant="body1">
+          <Typography variant="body1" style={{fontFamily:"cursive"}}>
             View Course Package to Access:
           </Typography>
           <List>
@@ -80,7 +80,7 @@ const HeroSection = () => {
           <Button
             fullWidth
             variant="contained"
-            sx={{ bgcolor: "blueviolet", height: "50px", marginTop: "8px" }}
+            sx={{ bgcolor: "blueviolet", height: "50px", marginTop: "10px" }}
           >
             SIGN UP
           </Button>
