@@ -1,10 +1,10 @@
-import Categories from "../reusable/Categories";
 import { CiLinkedin } from "react-icons/ci";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Data from "../data/Data.json";
+
 
 const currentDate = new Date().getFullYear();
 
@@ -18,9 +18,9 @@ function Footer() {
           </h1>
           <p>This is for strong-minded people.</p>
         </div>
-        <div className="flex flex-wrap justify-center sm:justify-start mb-4 sm:mb-0">
-          {Data.map((items, index) => (
-            <Categories {...items} key={index} />
+        <div className="flex flex-wrap justify-center sm:justify-start mb-4 sm:mb-0 gap-4">
+          {Data.map((items) => (
+            <p key={items.id}>{items.categories}</p>
           ))}
         </div>
         <div className="flex items-center justify-center sm:justify-start">
